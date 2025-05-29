@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Tracker Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Fitness Tracker</h1>
+    <div class="cards">
+      <div class="card" id="stepsCard">
+        <h2>Steps</h2>
+        <p id="steps">0</p>
+        <div class="progress-bar">
+          <div class="progress" id="stepsProgress"></div>
+        </div>
+      </div>
+
+      <div class="card" id="caloriesCard">
+        <h2>Calories</h2>
+        <p id="calories">0 kcal</p>
+        <div class="progress-bar">
+          <div class="progress" id="caloriesProgress"></div>
+        </div>
+      </div>
+
+      <div class="card" id="waterCard">
+        <h2>Water Intake</h2>
+        <p id="water">0 L</p>
+        <div class="progress-bar">
+          <div class="progress" id="waterProgress"></div>
+        </div>
+      </div>
+    </div>
+
+    <form id="updateForm">
+      <h3>Update Today's Data</h3>
+      <input type="number" placeholder="Steps" id="stepsInput" required />
+      <input type="number" placeholder="Calories" id="caloriesInput" required />
+      <input type="number" step="0.1" placeholder="Water (Litres)" id="waterInput" required />
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
